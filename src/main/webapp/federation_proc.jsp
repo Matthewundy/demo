@@ -10,7 +10,7 @@
 <link rel="icon" href="http://www.portal.euromonitor.com/AthensGateway/Images/favicon.png" type="image/x-icon" />
 </head>
 <body>
-<% if(request.getParameter("IdentityProvider").equals("Euromonitor-Customer-A){
+<% if(request.getParameter("IdentityProvider").equals("Euromonitor-Customer-A"){
     String redirectURL = "https://euromonitorpoc-customer.oktapreview.com/app/euromonitorpoccustomer_federationtoeuromonitorokta_1/exk6mpfc66b7p4HCJ0h7/sso/saml?RelayState=https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml";
     response.sendRedirect(redirectURL);
 }
