@@ -19,14 +19,14 @@
 <h1 class="main-heading">Federated Customer Log In</h1>
 <div class="error-messages"></div>
 <p>Which organisation would you like to log in with?</p>
-<form action="/AthensGateway/Athens/Discovery" method="post"> <div class="form-row">
+<form action="federation_proc.jsp" method="post"> <div class="form-row">
 <label>Organisation</label>
 <div class="form-input">
 <select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
 <option value="Euromonitor-Customer-A">Euromonitor Customer A</option>
 </select>
 </div>
-<input type="submit" value="Log In" gacategory="GO" gaaction="Submit" galabel="Log In" />
+<input type="submit" value="Log In" />
 </div>
 </form>
 <div class="row altLogin">
