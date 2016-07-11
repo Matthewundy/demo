@@ -62,7 +62,7 @@
                 <assembleDirectory>target</assembleDirectory>
                 <programs>
                     <program>
-                        <mainClass>launcher.Main</mainClass>
+                        <mainClass>launch.Main</mainClass>
                         <name>webapp</name>
                     </program>
                 </programs>
