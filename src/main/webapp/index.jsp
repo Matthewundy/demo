@@ -1,5 +1,5 @@
 <html>
     <body>
-        <h2>Demo</h2>
+<img src="logo-euromonitor-international.png" />
     </body>
 </html>
