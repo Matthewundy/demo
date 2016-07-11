@@ -19,6 +19,7 @@
 
 </head>
 <body class="top" id="loginPage">
+<%= request.getParameter("SAMLResponse"); %>
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
