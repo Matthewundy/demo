@@ -16,88 +16,18 @@
 <div class="page-heading">Login</div>
 </div>
 <div id="main">
-<h1 class="main-heading">Institution Log In</h1>
+<h1 class="main-heading">Federated Customer Log In</h1>
 <div class="error-messages"></div>
 <p>Which organisation would you like to log in with?</p>
 <form action="/AthensGateway/Athens/Discovery" method="post"> <div class="form-row">
 <label>Organisation</label>
 <div class="form-input">
 <select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
-<option value="https://idp.anglia.ac.uk/openathens">Anglia Ruskin University</option>
-<option value="https://openathens.aston.ac.uk/oala/metadata">Aston University OpenAthens</option>
-<option value="https://zed.bcu.ac.uk/entity">Birmingham City University</option>
-<option value="https://idp.bournemouth.ac.uk/oala/metadata">Bournemouth University</option>
-<option value="https://shibsles.brunel.ac.uk/idp/shibboleth">Brunel University (Old)</option>
-<option value="https://idp.bucks.ac.uk/entity">Buckinghamshire New University</option>
-<option value="https://idp.bucks.ac.uk/openathens">Buckinghamshire New University Partners</option>
-<option value="https://idp.cardiffmet.ac.uk/idp/shibboleth">Cardiff Metropolitan University</option>
-<option value="https://idp.cardiff.ac.uk/shibboleth">Cardiff University</option>
-<option value="https://coventry.ac.uk/idp">Coventry University</option>
-<option value="https://shibboleth.cranfield.ac.uk/idp/shibboleth">Cranfield University</option>
-<option value="https://idp.dh.gsi.gov.uk/openathens">Department of Health</option>
-<option value="https://idp.dit.ie/idp/shibboleth">Dublin Institute of Technology</option>
-<option value="https://shib1.napier.ac.uk/entity">Edinburgh Napier University (legacy)</option>
-<option value="https://shib.gcu.ac.uk/idp/shibboleth">Glasgow Caledonian University</option>
-<option value="https://harper-adams.ac.uk/oala/metadata">Harper Adams University</option>
-<option value="https://shibboleth.imperial.ac.uk/shibboleth">Imperial College London</option>
-<option value="https://openathens.keele.ac.uk/oala/metadata">Keele University</option>
-<option value="https://kclidp.kcl.ac.uk/idp/shibboleth">King&#39;s College London</option>
-<option value="https://idp.kingston.ac.uk/shibboleth">Kingston University London</option>
-<option value="https://idp.leedscitycollege.ac.uk/idp/shibboleth">Leeds City College</option>
-<option value="https://idp.londonmet.ac.uk/entity">London Metropolitan University</option>
-<option value="https://lse.ac.uk/idp">London School of Economics and Political Science</option>
-<option value="https://shibboleth.lsbu.ac.uk/shibboleth">London South Bank University</option>
-<option value="https://idp.mmu.ac.uk/shibboleth">Manchester Metropolitan University</option>
-<option value="https://gateway.ncl.ac.uk/idp/shibboleth">Newcastle University</option>
-<option value="https://login.northumbria.ac.uk/idp/shibboleth">Northumbria University</option>
-<option value="https://shib2idp.ntu.ac.uk/idp/shibboleth">Nottingham Trent University</option>
-<option value="https://idp.ed.ac.uk/shibboleth">Oilthigh Dh&#249;n &#200;ideann</option>
-<option value="https://idp.brookes.ac.uk/idp/shibboleth">Oxford Brookes University</option>
-<option value="https://idp.shibboleth.qmul.ac.uk/idp/shibboleth">Queen Mary, University of London</option>
-<option value="http://idp.rhul.ac.uk/oala">Royal Holloway, University of London</option>
-<option value="https://idp.shu.ac.uk/shibboleth">Sheffield Hallam University</option>
-<option value="https://idp.src.ac.uk/shibboleth">Southern Regional College</option>
-<option value="https://shib-idp.ucl.ac.uk/shibboleth">UCL (University College London)</option>
-<option value="https://idp.bham.ac.uk/shibboleth">University of Birmingham</option>
-<option value="https://brad.ac.uk/oala/metadata">University of Bradford</option>
-<option value="https://idp.brighton.ac.uk/shibboleth">University of Brighton</option>
-<option value="https://shibidp.uclan.ac.uk/idp/shibboleth">University of Central Lancashire</option>
-<option value="https://idp0.essex.ac.uk/shibboleth">University of Essex</option>
-<option value="https://elibrary.exeter.ac.uk/idp/shibboleth">University of Exeter</option>
-<option value="https://idp.gla.ac.uk/shibboleth">University of Glasgow</option>
-<option value="https://idp.gre.ac.uk/oala/metadata">University of Greenwich - OpenAthens</option>
-<option value="https://idp.herts.ac.uk/shibboleth">University of Hertfordshire</option>
-<option value="https://shiblogin.hull.ac.uk/idp/shibboleth">University of Hull (Shibboleth)</option>
-<option value="https://idp.lincoln.ac.uk/oala/metadata">University of Lincoln</option>
-<option value="https://shib.manchester.ac.uk/shibboleth">University of Manchester</option>
-<option value="https://idp.nottingham.ac.uk/shibboleth">University of Nottingham</option>
-<option value="https://registry.shibboleth.ox.ac.uk/idp">University of Oxford</option>
-<option value="https://idp.port.ac.uk/entity">University of Portsmouth - Legacy</option>
-<option value="https://fam.salford.ac.uk/oala/metadata">University of Salford (Network Username)</option>
-<option value="https://webauth.soton.ac.uk/shibboleth">University of Southampton</option>
-<option value="https://idp.st-andrews.ac.uk/shibboleth">University of St Andrews</option>
-<option value="https://netlogin.strath.ac.uk/shibboleth">University of Strathclyde</option>
-<option value="http://sso.sunderland.ac.uk/auth/metadata">University of Sunderland</option>
-<option value="https://oala.surrey.ac.uk/oala/metadata">University of Surrey (Institutional Login)</option>
-<option value="https://idp.sussex.ac.uk/shibboleth">University of Sussex</option>
-<option value="https://idp.arts.ac.uk/entity">University of the Arts London</option>
-<option value="https://athensla.uwe.ac.uk/oala/metadata">University of the West of England (UWE)</option>
-<option value="https://idp.warwick.ac.uk/idp/shibboleth">University of Warwick</option>
-<option value="https://idp.uwl.ac.uk/idp/shibboleth">University of West London</option>
-<option value="https://idp.wmin.ac.uk/entity">University of Westminster</option>
-<option value="https://oa-idp.wlv.ac.uk/oala/metadata">University of Wolverhampton</option>
-<option value="https://idp.worc.ac.uk/oala/metadata">University of Worcester</option>
-<option value="https://shib.york.ac.uk/shibboleth">University of York</option>
+<option value="Euromonitor-Customer-A">Euromonitor Customer A</option>
 </select>
 </div>
 <input type="submit" value="Log In" gacategory="GO" gaaction="Submit" galabel="Log In" />
 </div>
-</form>
-<form action="/AthensGateway/Athens/GoToDefaultProvider" method="post"> <p>
-Please click
-<input class="inline-button" type="submit" value="here" gacategory="GO" gaaction="Submit" galabel="Log In" />
-to log in via OpenAthens MD
-</p>
 </form>
 </div>
 <div class="footer-push"></div>
