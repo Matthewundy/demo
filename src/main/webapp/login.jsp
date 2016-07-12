@@ -22,7 +22,8 @@
 <%
 if(request.getParameter("SAMLResponse") != null){
 String responseMessage = request.getParameter("SAMLResponse");
-byte[] base64DecodedResponse = Base64.decode(responseMessage);
+Base64.Decoder decoder = Base64.getDecoder();
+decoder.decode(test);
 
 out.write(base64DecodedResponse);
 }
@@ -79,7 +80,7 @@ out.write(base64DecodedResponse);
     <div class="colW">
 
 
-<form action="/portal/account/login" method="post">            <div class="controlWrap">
+<form action="login_proc.jsp" method="post">            <div class="controlWrap">
                 <div class="controlFormBlock welcomeLogin">
                     <div class="controlHeadline">
                         <h3>
@@ -97,7 +98,6 @@ out.write(base64DecodedResponse);
 
                     <section id="loginForm">
 
-                        <input name="__RequestVerificationToken" type="hidden" value="Hvvp_5dBlQfzs3hhq-_74wDbiwCSvNiGcbSvk_HGIAuMfdacLtQ3-qeLWyGBHl_LnoHkQjlnePDfV7xgWneb-MdS7eY1" />
 
                         <div class="loginFormItems">
                             <div class="validationArea">
