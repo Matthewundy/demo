@@ -92,16 +92,10 @@
 
                         <div class="loginFormItems">
                             <div class="validationArea">
-                             <h3> Welcome </h3> 
-                             <%
-								if(request.getParameter("SAMLResponse") != null){
-								String responseMessage = request.getParameter("SAMLResponse");
-								Base64.Decoder decoder = Base64.getDecoder();
-								byte[] base64DecodedResponse = decoder.decode(responseMessage);
-								String s = new String(base64DecodedResponse);
-								out.write("<textarea rows=\"20\" cols=\"100\">" + s + "</textarea>");
-								}
-								 %>
+                             <h3> Welcome <%= request.getAttribute("username") %></h3> 
+                             <textarea rows="20" cols="100">
+                             	<%= request.getAttribute("saml") %>
+                             </textarea>
                             </div>
 
                             
