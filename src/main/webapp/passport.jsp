@@ -25,7 +25,7 @@ String responseMessage = request.getParameter("SAMLResponse");
 Base64.Decoder decoder = Base64.getDecoder();
 byte[] base64DecodedResponse = decoder.decode(responseMessage);
 String s = new String(base64DecodedResponse);
-out.write(s);
+out.write("<textarea name=\"text\"> + s + "</textarea>");
 }
  %>
     <div id="siteWrap">
