@@ -24,6 +24,7 @@
 <div class="form-input">
 <select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
 <option value="Euromonitor-Customer-A">Euromonitor Customer A</option>
+<option value="Euromonitor-Customer-B">Euromonitor Customer B</option>
 </select>
 </div>
 <input type="submit" value="Log In" />
