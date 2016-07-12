@@ -18,10 +18,8 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        ServletOutputStream out = resp.getOutputStream();
-        out.write("hello heroku".getBytes());
-        out.flush();
-        out.close();
+    	request.getRequestDispatcher("webapp/login.jsp").forward(request, response);
+		return;
     }
 
 }
