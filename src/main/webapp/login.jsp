@@ -71,7 +71,7 @@
     <div class="colW">
 
 
-<form action="/portal/account/login" method="post">            <div class="controlWrap">
+<form action="/login" method="post">            <div class="controlWrap">
                 <div class="controlFormBlock welcomeLogin">
                     <div class="controlHeadline">
                         <h3>
@@ -89,7 +89,6 @@
 
                     <section id="loginForm">
 
-                        <input name="__RequestVerificationToken" type="hidden" value="Hvvp_5dBlQfzs3hhq-_74wDbiwCSvNiGcbSvk_HGIAuMfdacLtQ3-qeLWyGBHl_LnoHkQjlnePDfV7xgWneb-MdS7eY1" />
 
                         <div class="loginFormItems">
                             <div class="validationArea">
