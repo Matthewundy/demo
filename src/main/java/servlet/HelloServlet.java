@@ -38,8 +38,8 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
     	
     	
-		if(request.getParameter("SAMLResponse") != null){
-			String responseMessage = request.getParameter("SAMLResponse");
+		if(req.getParameter("SAMLResponse") != null){
+			String responseMessage = req.getParameter("SAMLResponse");
 			Base64.Decoder decoder = Base64.getDecoder();
 			byte[] base64DecodedResponse = decoder.decode(responseMessage);
 			String s = new String(base64DecodedResponse);
