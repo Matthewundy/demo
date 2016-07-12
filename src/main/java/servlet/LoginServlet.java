@@ -40,9 +40,9 @@ public class LoginServlet extends HttpServlet {
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentials(username, password);
+		resp.sendRedirect("https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml");
 		} catch (ApiException e) {
 		}
-		resp.sendRedirect("https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml");
 		return;
     }
 

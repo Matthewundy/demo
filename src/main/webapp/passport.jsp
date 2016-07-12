@@ -93,7 +93,7 @@
                         <div class="loginFormItems">
                             <div class="validationArea">
                              
-                             <textarea rows="20" cols="100">
+                             <textarea rows="30" cols="100">
                              	<%= request.getAttribute("saml") %>
                              </textarea>
                             </div>
