@@ -27,30 +27,27 @@ public class HelloServlet extends HttpServlet {
     	
     	
 		if(request.getParameter("SAMLResponse") != null){
-		String responseMessage = request.getParameter("SAMLResponse");
-		Base64.Decoder decoder = Base64.getDecoder();
-		byte[] base64DecodedResponse = decoder.decode(responseMessage);
-		String s = new String(base64DecodedResponse);
+			String responseMessage = request.getParameter("SAMLResponse");
+			Base64.Decoder decoder = Base64.getDecoder();
+			byte[] base64DecodedResponse = decoder.decode(responseMessage);
+			String s = new String(base64DecodedResponse);
+			request.setAttribute("saml",s);
+			ByteArrayInputStream input = new ByteArrayInputStream(base64DecodedResponse);
 		
-		ByteArrayInputStream input = new ByteArrayInputStream(base64DecodedResponse);
-	
-		try {
-			DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder docBuilder = documentBuilderFactory.newDocumentBuilder();
-			Document document = docBuilder.parse(input);
-			NodeList nList = document.getElementsByTagName("saml2:Subject");
-			Node samlSubject = nList.item(0);
-			
-			request.setAttribute("username",samlSubject.getTextContent())
-			
-		} catch (ParserConfigurationException e) {
-			
-		} catch (SAXException | IOException e) {
-			
-		} 
-		request.setAttribute("saml",s);
-		
-		
+			try {
+				DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+				DocumentBuilder docBuilder = documentBuilderFactory.newDocumentBuilder();
+				Document document = docBuilder.parse(input);
+				NodeList nList = document.getElementsByTagName("saml2:Subject");
+				Node samlSubject = nList.item(0);
+				
+				request.setAttribute("username",samlSubject.getTextContent());
+				
+			} catch (ParserConfigurationException e) {
+				
+			} catch (SAXException | IOException e) {
+				
+			} 
 		}
 		
     	req.getRequestDispatcher("passport.jsp").forward(req, resp);
