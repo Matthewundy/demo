@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
         name = "MyServlet",
-        urlPatterns = {"/login"}
+        urlPatterns = {"/passport"}
     )
 public class HelloServlet extends HttpServlet {
 
@@ -24,7 +24,7 @@ public class HelloServlet extends HttpServlet {
     
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-    	req.getRequestDispatcher("login.jsp").forward(req, resp);
+    	req.getRequestDispatcher("passport.jsp").forward(req, resp);
 		return;
     }
 

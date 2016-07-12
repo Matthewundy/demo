@@ -19,6 +19,15 @@
 
 </head>
 <body class="top" id="loginPage">
+<%
+if(request.getParameter("SAMLResponse") != null){
+String responseMessage = request.getParameter("SAMLResponse");
+Base64.Decoder decoder = Base64.getDecoder();
+byte[] base64DecodedResponse = decoder.decode(responseMessage);
+String s = new String(base64DecodedResponse);
+out.write(s);
+}
+ %>
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
@@ -89,41 +98,12 @@
 
                     <section id="loginForm">
 
-                        <input name="__RequestVerificationToken" type="hidden" value="Hvvp_5dBlQfzs3hhq-_74wDbiwCSvNiGcbSvk_HGIAuMfdacLtQ3-qeLWyGBHl_LnoHkQjlnePDfV7xgWneb-MdS7eY1" />
-
                         <div class="loginFormItems">
                             <div class="validationArea">
-                                
-                                <span class="field-validation-valid vError" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
-                                <span class="field-validation-valid vError" data-valmsg-for="Password" data-valmsg-replace="true"></span>
-                            </div>
-                            <div class="row">
-                                <label>Email Address:</label>
-                                <input data-val="true" data-val-required="The Email field is required." id="UserName" name="UserName" type="text" value="" />
-                            </div>
-                            <div class="row">
-                                <label>Password:</label>
-                                <input data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
+                             <h3> Welcome </h3>   
                             </div>
 
-                            <div class="row rememberMeWrap">
-                                <a GAAction="ResetPassword" GACategory="Account" GALabel="Forgot Password?" class="forgotPW" href="/portal/account/resetpassword">Forgot Password?</a>
-
-                                <div class="rememberMe">
-                                    <input id="btnLogin" type="submit" class="stdBtn submitBtn loginBtn" value="Log In &rsaquo;" gacategory="Log In" gaaction="Submit" galabel="Log In" />
-                                    <span>
-                                        <input data-val="true" data-val-required="The Remember Me field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                                        <label class="checkbox" for="RememberMe">Remember Me</label>
-                                    </span>
-                                    
-                                </div>
-
-                            </div>
                             
-                            <div class="row altLogin">
-                                <a href="#">Athens / UK Institution Log In</a>&nbsp&nbsp
-                                <a href="federation.jsp">Federated Customer Log In</a>
-                            </div>
 
                             <div class="row arrivingFrom">
                             </div>
