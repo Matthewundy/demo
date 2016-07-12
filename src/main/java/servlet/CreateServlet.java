@@ -14,6 +14,7 @@ import com.okta.sdk.clients.UserApiClient;
 import com.okta.sdk.exceptions.ApiException;
 import com.okta.sdk.framework.ApiClientConfiguration;
 import com.okta.sdk.models.sessions.Session;
+import com.okta.sdk.models.users.User;
 
 @WebServlet(
         name = "CreateServlet",
