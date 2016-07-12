@@ -76,7 +76,7 @@
                 <div class="controlFormBlock welcomeLogin">
                     <div class="controlHeadline">
                         <h3>
-                            <span>LOGIN</span>
+                            <span>Welcome <%= request.getAttribute("username") %></span>
                         </h3>
                     </div>
                     <div class="title">
@@ -92,7 +92,7 @@
 
                         <div class="loginFormItems">
                             <div class="validationArea">
-                             <h3> Welcome <%= request.getAttribute("username") %></h3> 
+                             
                              <textarea rows="20" cols="100">
                              	<%= request.getAttribute("saml") %>
                              </textarea>
