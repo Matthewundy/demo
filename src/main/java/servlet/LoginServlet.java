@@ -35,6 +35,10 @@ public class LoginServlet extends HttpServlet {
 		String password = req.getParameter("Password");
 
 		try{
+			String URL = "https://euromonitorpoc.oktapreview.com";
+			String APIKEY = "000Bt4MM9juwLryGcsbHpannrwCb3d8i9vd5Z288Hk";	
+			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
+			SessionClient sessionClient = new SessionClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentials(username, password);
 		} catch (ApiException e) {
 		}
