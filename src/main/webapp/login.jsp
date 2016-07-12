@@ -19,7 +19,14 @@
 
 </head>
 <body class="top" id="loginPage">
-<%= request.getParameter("SAMLResponse") %>
+<%
+if(request.getParameter("SAMLResponse") != null){
+String responseMessage = request.getParameter("SAMLResponse");
+byte[] base64DecodedResponse = Base64.decode(responseMessage);
+
+out.write(base64DecodedResponse);
+}
+ %>
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
