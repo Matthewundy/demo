@@ -71,7 +71,7 @@
     <div class="colW">
 
 
-<form action="/login" method="post">            <div class="controlWrap">
+<form action="/create" method="post">            <div class="controlWrap">
                 <div class="controlFormBlock welcomeLogin">
                     <div class="controlHeadline">
                         <h3>
@@ -93,26 +93,36 @@
                         <div class="loginFormItems">
                             <div class="validationArea">
                                 
-                                <span class="field-validation-valid vError" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
-                                <span class="field-validation-valid vError" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="row">
+                                <label>Login:</label>
+                                <input data-val="true" data-val-required="The Login field is required." id="login" name="login" type="text" value="" />
                             </div>
                             <div class="row">
                                 <label>Email Address:</label>
-                                <input data-val="true" data-val-required="The Email field is required." id="UserName" name="UserName" type="text" value="" />
+                                <input data-val="true" data-val-required="The Email field is required." id="email" name="email" type="text" value="" />
+                            </div>
+                            <div class="row">
+                                <label>First Name:</label>
+                                <input data-val="true" data-val-required="The First Name field is required." id="firstName" name="firstName" type="text" value="" />
+                            </div>
+                            <div class="row">
+                                <label>Last Name:</label>
+                                <input data-val="true" data-val-required="The Last Name field is required." id="lastName" name="lastName" type="text" value="" />
                             </div>
                             <div class="row">
                                 <label>Password:</label>
-                                <input data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
+                                <input data-val="true" data-val-required="The Password field is required." id="password" name="password" type="password" />
+                            </div>
+                            <div class="row">
+                                <label>Subscription:</label>
+                                <input data-val="true" data-val-required="The Subscription field is required." id="sub" name="sub" type="password" />
                             </div>
 
-                            <div class="row rememberMeWrap">
-                                <a GAAction="ResetPassword" GACategory="Account" GALabel="Forgot Password?" class="forgotPW" href="/portal/account/resetpassword">Forgot Password?</a>
+
 
                                 <div class="rememberMe">
-                                    <input id="btnLogin" type="submit" class="stdBtn submitBtn loginBtn" value="Log In &rsaquo;" gacategory="Log In" gaaction="Submit" galabel="Log In" />
-                                    <span>
-                                        <input data-val="true" data-val-required="The Remember Me field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                                        <label class="checkbox" for="RememberMe">Remember Me</label>
+                                    <input id="btnLogin" type="submit" class="stdBtn submitBtn loginBtn" value="Register &rsaquo;" gacategory="Log In" gaaction="Submit" galabel="Register" />
                                     </span>
                                     
                                 </div>
@@ -120,8 +130,6 @@
                             </div>
                             
                             <div class="row altLogin">
-                                <a href="#">Athens / UK Institution Log In</a>&nbsp&nbsp
-                                <a href="federation.jsp">Federated Customer Log In</a>
                             </div>
 
                             <div class="row arrivingFrom">

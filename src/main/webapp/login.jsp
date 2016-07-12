@@ -122,6 +122,7 @@
                             <div class="row altLogin">
                                 <a href="#">Athens / UK Institution Log In</a>&nbsp&nbsp
                                 <a href="federation.jsp">Federated Customer Log In</a>
+                                <a href="/create">Register</a>
                             </div>
 
                             <div class="row arrivingFrom">
