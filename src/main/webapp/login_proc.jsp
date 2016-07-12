@@ -17,7 +17,7 @@ response.sendRedirect(redirectURL);
 }
 
 if(request.getParameter("IdentityProvider").equals("Euromonitor-Customer-B")){
-String redirectURL = "https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=https%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml";
+String redirectURL = "https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=RPID%3Dhttps%253A%252F%252Fwww.okta.com%252Fsaml2%252Fservice-provider%252Fspzotjljqwhhcttplpon%26RelayState%3Dhttps%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml";
 response.sendRedirect(redirectURL);
 }
 
