@@ -31,12 +31,12 @@ public class CreateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 		
-		String login = request.getParameter("login"); 
-		String email = request.getParameter("email");
-		String firstName = request.getParameter("firstName");
-		String lastName = request.getParameter("lastName");
-		String password = request.getParameter("password");
-		String sub = request.getParameter("sub");
+		String login = req.getParameter("login"); 
+		String email = req.getParameter("email");
+		String firstName = req.getParameter("firstName");
+		String lastName = req.getParameter("lastName");
+		String password = req.getParameter("password");
+		String sub = req.getParameter("sub");
 
 		try{
 			String URL = "https://euromonitorpoc.oktapreview.com";
