@@ -14,7 +14,6 @@ import com.okta.sdk.clients.UserApiClient;
 import com.okta.sdk.exceptions.ApiException;
 import com.okta.sdk.framework.ApiClientConfiguration;
 import com.okta.sdk.models.sessions.Session;
-import com.okta.sdkdemo.okta.OktaApiController;
 
 @WebServlet(
         name = "LoginServlet",
@@ -25,7 +24,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-    	req.getRequestDispatcher("login_proc.jsp").forward(req, resp);
+    	req.getRequestDispatcher("/passport").forward(req, resp);
 		return;
     }
     
