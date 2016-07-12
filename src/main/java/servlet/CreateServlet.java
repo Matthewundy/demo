@@ -19,7 +19,7 @@ import com.okta.sdk.models.sessions.Session;
         name = "CreateServlet",
         urlPatterns = {"/create"}
     )
-public class LoginServlet extends HttpServlet {
+public class CreateServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -35,7 +35,6 @@ public class LoginServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
-
 		String password = request.getParameter("password");
 		String sub = request.getParameter("sub");
 
