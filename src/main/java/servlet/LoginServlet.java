@@ -41,8 +41,8 @@ public class LoginServlet extends HttpServlet {
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentialsAndCookieToken(username, password);
 			String token = mySession.getCookieToken();
-			String redirectUrl=https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml;
-		resp.sendRedirect("https://euromonitorpoc.oktapreview.com/login/sessionCookieRedirect?token=" + token + "&redirectUrl=" + redirectUrl);
+			String redirectUrl="https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml";
+			resp.sendRedirect("https://euromonitorpoc.oktapreview.com/login/sessionCookieRedirect?token=" + token + "&redirectUrl=" + redirectUrl);
 		} catch (ApiException e) {
 		}
 		return;
