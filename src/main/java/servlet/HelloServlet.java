@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-    	request.getRequestDispatcher("webapp/login.jsp").forward(request, response);
+    	request.getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
 		return;
     }
 
