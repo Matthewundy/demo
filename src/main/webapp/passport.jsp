@@ -99,7 +99,7 @@
 								Base64.Decoder decoder = Base64.getDecoder();
 								byte[] base64DecodedResponse = decoder.decode(responseMessage);
 								String s = new String(base64DecodedResponse);
-								out.write("<textarea name=\"text\" style=\"{width:200px;height:200px}\">" + s + "</textarea>");
+								out.write("<textarea rows=\"50\" cols=\"50\">" + s + "</textarea>");
 								}
 								 %>
                             </div>
