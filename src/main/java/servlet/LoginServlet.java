@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			Session mySession = sessionClient.createSessionWithCredentials(username, password);
 		} catch (ApiException e) {
 		}
-		res.sendRedirect("https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml");
+		resp.sendRedirect("https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml");
 		return;
     }
 
