@@ -19,15 +19,7 @@
 
 </head>
 <body class="top" id="loginPage">
-<%
-if(request.getParameter("SAMLResponse") != null){
-String responseMessage = request.getParameter("SAMLResponse");
-Base64.Decoder decoder = Base64.getDecoder();
-byte[] base64DecodedResponse = decoder.decode(responseMessage);
-String s = new String(base64DecodedResponse);
-out.write("<textarea name=\"text\">" + s + "</textarea>");
-}
- %>
+
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
@@ -100,7 +92,16 @@ out.write("<textarea name=\"text\">" + s + "</textarea>");
 
                         <div class="loginFormItems">
                             <div class="validationArea">
-                             <h3> Welcome </h3>   
+                             <h3> Welcome </h3> 
+                             <%
+								if(request.getParameter("SAMLResponse") != null){
+								String responseMessage = request.getParameter("SAMLResponse");
+								Base64.Decoder decoder = Base64.getDecoder();
+								byte[] base64DecodedResponse = decoder.decode(responseMessage);
+								String s = new String(base64DecodedResponse);
+								out.write("<textarea name=\"text\" style=\"{width:200px;height:200px}\">" + s + "</textarea>");
+								}
+								 %>
                             </div>
 
                             
