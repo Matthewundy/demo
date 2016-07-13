@@ -20,7 +20,6 @@
 <div class="error-messages"></div>
 <p>Which organisation would you like to log in with?</p>
 <form action="/federation" method="post"> <div class="form-row">
-<label>Organisation</label>
 <div class="form-input">
 
 <section id="loginForm">
