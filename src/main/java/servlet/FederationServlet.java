@@ -45,6 +45,7 @@ public class FederationServlet extends HttpServlet {
 
 			if(user.getProfile().getUnmapped().get("idp").equals("Euromonitor-Customer-A")){
 				req.setAttribute("url","https://euromonitorpoc-customer.oktapreview.com/app/euromonitorpoccustomer_federationtoeuromonitorokta_1/exk6mpfc66b7p4HCJ0h7/sso/saml?RelayState=https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml");
+}
 		} catch (ApiException e) {
 req.getRequestDispatcher("federation_auto.jsp").forward(req, resp);
 		}
