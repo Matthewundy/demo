@@ -10,7 +10,9 @@
 <link rel="icon" href="http://www.portal.euromonitor.com/AthensGateway/Images/favicon.png" type="image/x-icon" />
 </head>
 <body>
-<h3>DEBUG: <%= request.getAttribute("username") %></h3>
+<h3>DEBUG: Okta username: <%= request.getAttribute("username") %></h3>
+<h3>DEBUG: Okta idp: <%= request.getAttribute("idp") %></h3>
+<h3>DEBUG: IDP URL: <%= request.getAttribute("url") %></h3>
 <h3>DEBUG: <a href="<%= request.getAttribute("url") %>">Login with Federation</a></h3>
 </body>
 </html>
