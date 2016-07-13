@@ -10,6 +10,7 @@
 <link rel="icon" href="http://www.portal.euromonitor.com/AthensGateway/Images/favicon.png" type="image/x-icon" />
 </head>
 <body>
+<%= username %>
 <div class="site-wrapper">
 <div id="header">
 <div class="logo"><img src="http://www.portal.euromonitor.com/AthensGateway/Images/logo.png" /></div>
@@ -19,13 +20,36 @@
 <h1 class="main-heading">Federated Customer Log In</h1>
 <div class="error-messages"></div>
 <p>Which organisation would you like to log in with?</p>
-<form action="federation_proc.jsp" method="post"> <div class="form-row">
+<form action="/federation" method="post"> <div class="form-row">
 <label>Organisation</label>
 <div class="form-input">
-<select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
-<option value="Euromonitor-Customer-A">Euromonitor Customer A</option>
-<option value="Euromonitor-Customer-B">Euromonitor Customer B</option>
-</select>
+
+<section id="loginForm">
+
+
+                        <div class="loginFormItems">
+                            <div class="validationArea">
+
+                                <span class="field-validation-valid vError" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="row">
+                                <label>Email Address:</label>
+                                <input data-val="true" data-val-required="The Email field is required." id="UserName" name="UserName" type="text" value="" />
+                            </div>
+
+
+
+
+
+
+                            <div class="row arrivingFrom">
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
 </div>
 <input type="submit" value="Log In" />
 </div>
