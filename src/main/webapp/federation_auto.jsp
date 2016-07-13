@@ -10,7 +10,6 @@
 <link rel="icon" href="http://www.portal.euromonitor.com/AthensGateway/Images/favicon.png" type="image/x-icon" />
 </head>
 <body>
-<%= request.getAttribute("username") %>
 <div class="site-wrapper">
 <div id="header">
 <div class="logo"><img src="http://www.portal.euromonitor.com/AthensGateway/Images/logo.png" /></div>
