@@ -40,7 +40,7 @@ public class FederationServlet extends HttpServlet {
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			UserApiClient usersClient = new UserApiClient(oktaSettings);
 			User user = usersClient.getUser(username);
-			req.setAttribute("username",user.getLogin());
+			req.setAttribute("username",user.getProfile().getLogin());
 		} catch (ApiException e) {
 req.getRequestDispatcher("federation_auto.jsp").forward(req, resp);
 		}
