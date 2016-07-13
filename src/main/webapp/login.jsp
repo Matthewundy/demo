@@ -106,7 +106,7 @@
                             </div>
 
                             <div class="row rememberMeWrap">
-                                <a GAAction="ResetPassword" GACategory="Account" GALabel="Forgot Password?" class="forgotPW" href="/portal/account/resetpassword">Forgot Password?</a>
+                                <a GAAction="ResetPassword" GACategory="Account" GALabel="Forgot Password?" class="forgotPW" href="#">Forgot Password?</a>
 
                                 <div class="rememberMe">
                                     <input id="btnLogin" type="submit" class="stdBtn submitBtn loginBtn" value="Log In &rsaquo;" gacategory="Log In" gaaction="Submit" galabel="Log In" />
