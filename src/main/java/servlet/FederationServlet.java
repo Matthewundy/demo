@@ -37,6 +37,8 @@ public class FederationServlet extends HttpServlet {
 			String URL = "https://euromonitorpoc.oktapreview.com";
 			String APIKEY = "000Bt4MM9juwLryGcsbHpannrwCb3d8i9vd5Z288Hk";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
+			UserApiClient usersClient = new UsersApiClient(oktaSettings);
+			User user = usersClient.getUser(username);
 		} catch (ApiException e) {
 req.getRequestDispatcher("federation_auto.jsp").forward(req, resp);
 		}
