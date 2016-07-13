@@ -9,11 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.okta.sdk.clients.SessionApiClient;
+import com.okta.sdk.clients.UserApiClient;
 import com.okta.sdk.clients.UserApiClient;
 import com.okta.sdk.exceptions.ApiException;
 import com.okta.sdk.framework.ApiClientConfiguration;
-import com.okta.sdk.models.sessions.Session;
+import com.okta.sdk.models.users.User;
+import com.okta.sdk.models.users.UserProfile;
 
 @WebServlet(
         name = "FederationServlet",
