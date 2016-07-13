@@ -41,7 +41,7 @@ public class FederationServlet extends HttpServlet {
 			UserApiClient usersClient = new UserApiClient(oktaSettings);
 			User user = usersClient.getUser(username);
 			req.setAttribute("username",user.getProfile().getLogin());
-
+			if(user.getProfile().getUnmapped().get("idp") != null){
 
 			if(user.getProfile().getUnmapped().get("idp").equals("Euromonitor-Customer-A")){
 				req.setAttribute("idp","Euromonitor-Customer-A");
@@ -50,6 +50,10 @@ public class FederationServlet extends HttpServlet {
 			if(user.getProfile().getUnmapped().get("idp").equals("Euromonitor-Customer-B")){
 				req.setAttribute("idp","Euromonitor-Customer-B");
 				req.setAttribute("url","https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=RPID%3Dhttps%253A%252F%252Fwww.okta.com%252Fsaml2%252Fservice-provider%252Fspzotjljqwhhcttplpon%26RelayState%3Dhttps%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml");
+}
+} else {
+	req.setAttribute("idp","None - local user");
+        req.setAttribute("url","None");
 }
 		} catch (ApiException e) {
 req.getRequestDispatcher("federation_auto.jsp").forward(req, resp);
