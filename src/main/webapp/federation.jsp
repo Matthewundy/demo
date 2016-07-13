@@ -31,7 +31,7 @@
 </div>
 </form>
 <div class="row altLogin">
-                                <a href="login.jsp">Username / Password Log In</a>
+                                <a href="/passport">Username / Password Log In</a>
                             </div>
 </div>
 <div class="footer-push"></div>

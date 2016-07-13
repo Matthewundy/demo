@@ -10,7 +10,7 @@
 <link rel="icon" href="http://www.portal.euromonitor.com/AthensGateway/Images/favicon.png" type="image/x-icon" />
 </head>
 <body>
-DEBUG: <%= request.getAttribute("username") %>
-DEBUG: <a href="<%= request.getAttribute("url") %>">Login with Federation</a>
+<h3>DEBUG: <%= request.getAttribute("username") %></h3>
+<h3>DEBUG: <a href="<%= request.getAttribute("url") %>">Login with Federation</a></h3>
 </body>
 </html>

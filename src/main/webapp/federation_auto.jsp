@@ -18,7 +18,7 @@
 <div id="main">
 <h1 class="main-heading">Federated Customer Log In</h1>
 <div class="error-messages"></div>
-<p>Which organisation would you like to log in with?</p>
+<p>Enter your username / email address</p>
 <form action="/federation" method="post"> <div class="form-row">
 <div class="form-input">
 
@@ -53,7 +53,7 @@
 </div>
 </form>
 <div class="row altLogin">
-                                <a href="login.jsp">Username / Password Log In</a>
+                                <a href="/passport">Username / Password Log In</a>
                             </div>
 </div>
 <div class="footer-push"></div>
