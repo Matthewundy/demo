@@ -120,10 +120,10 @@
                             </div>
                             
                             <div class="row altLogin">
-                                <a href="#">Athens / UK Institution Log In</a>&nbsp&nbsp
-                                <a href="federation.jsp">Federated Customer Log In (Option A)</a>&nbsp&nbsp
-                                <a href="/federation">Federated Customer Log In (Option B)</a>&nbsp&nbsp
-                                <a href="/create">Register</a>
+                                <p><a href="#">Athens / UK Institution Log In</a></p>
+                                <p><a href="federation.jsp">Federated Customer Log In (Option A)</a>&nbsp&nbsp
+                                <a href="/federation">Federated Customer Log In (Option B)</a></p>
+                                <p><a href="/create">Register New User</a></p>
                             </div>
 
                             <div class="row arrivingFrom">
