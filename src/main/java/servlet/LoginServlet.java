@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-    	req.getRequestDispatcher("/passport").forward(req, resp);
+    	req.getRequestDispatcher("/portal").forward(req, resp);
 		return;
     }
     
@@ -39,12 +39,10 @@ public class LoginServlet extends HttpServlet {
 			String APIKEY = "000Bt4MM9juwLryGcsbHpannrwCb3d8i9vd5Z288Hk";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
-			Session mySession = sessionClient.createSessionWithCredentialsAndCookieToken(username, password);
-			String token = mySession.getCookieToken();
-			String redirectUrl="https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml";
-			resp.sendRedirect("https://euromonitorpoc.oktapreview.com/login/sessionCookieRedirect?token=" + token + "&redirectUrl=" + redirectUrl);
+			//Session mySession = sessionClient.createSessionWithCredentials(username, password);
+			Session mySession = sesisonClient.
+		resp.sendRedirect("https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorportal_1/exk6mqdgvsyvhEIE20h7/sso/saml");
 		} catch (ApiException e) {
-			resp.sendRedirect("/passport");
 		}
 		return;
     }

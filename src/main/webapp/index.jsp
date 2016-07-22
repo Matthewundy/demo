@@ -1,8 +1,8 @@
 <html>
     <body>
-	<img src="logo-euromonitor-international.png" />
+	<img src="prs-logo-red.png" />
 	<p>
-		<a href="/passport">Open Passport</a>
+		<a href="/portal">Open Portal</a>
 	</p>
     </body>
 </html>

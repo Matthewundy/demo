@@ -23,7 +23,7 @@ import org.xml.sax.SAXException;
 
 @WebServlet(
         name = "MyServlet",
-        urlPatterns = {"/passport"}
+        urlPatterns = {"/portal"}
     )
 public class HelloServlet extends HttpServlet {
 
@@ -62,7 +62,7 @@ public class HelloServlet extends HttpServlet {
 			} 
 		}
 		
-    	req.getRequestDispatcher("passport.jsp").forward(req, resp);
+    	req.getRequestDispatcher("portal.jsp").forward(req, resp);
 		return;
     }
 
