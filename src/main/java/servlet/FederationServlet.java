@@ -44,11 +44,11 @@ public class FederationServlet extends HttpServlet {
 			if(user.getProfile().getUnmapped().get("idp") != null){
 
 			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-A")){
-				req.setAttribute("idp","Euromonitor-Customer-A");
+				req.setAttribute("idp","PRS-Customer-A");
 				req.setAttribute("url","https://prs-poc-customer.oktapreview.com/home/bookmark/0oa6wjidi9JJlZYb20h7/1280?fromHome=true");
 }
 			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-B")){
-				req.setAttribute("idp","Euromonitor-Customer-B");
+				req.setAttribute("idp","PRS-Customer-B");
 				req.setAttribute("url","https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=RPID%3Dhttps%253A%252F%252Fwww.okta.com%252Fsaml2%252Fservice-provider%252Fspzotjljqwhhcttplpon%26RelayState%3Dhttps%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml");
 }
 } else {

@@ -11,7 +11,7 @@
 <body>
 <%
 if(request.getParameter("IdentityProvider").equals("PRS-Customer-A")){
-String redirectURL = "https://euromonitorpoc-customer.oktapreview.com/app/euromonitorpoccustomer_federationtoeuromonitorokta_1/exk6mpfc66b7p4HCJ0h7/sso/saml?RelayState=https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml";
+String redirectURL = "https://prs-poc-customer.oktapreview.com/home/bookmark/0oa6wjidi9JJlZYb20h7/1280";
 response.sendRedirect(redirectURL);
 }
 
