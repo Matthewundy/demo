@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <title>Euromonitor International - Log in</title>
+    <title>PRS - Log in</title>
 
     <link href="style/1.css" rel="stylesheet"/>
 
@@ -44,7 +44,7 @@
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
-        <h1>Welcome to Passport</h1>
+        <h1>Welcome to PRS</h1>
     </div>
     <div class="colM">
         <div class="controlWrap">
@@ -112,7 +112,6 @@
                             </div>
                             
                             <div class="row altLogin">
-                                <p><a href="#">Athens / UK Institution Log In</a></p>
                                 <p><a href="federation.jsp">Federated Customer Log In (Option A)</a>&nbsp&nbsp
                                 <a href="/federation">Federated Customer Log In (Option B)</a></p>
                                 <p><a href="/create">Register New User</a></p>
