@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-    	req.getRequestDispatcher("/passport").forward(req, resp);
+    	req.getRequestDispatcher("/portal").forward(req, resp);
 		return;
     }
     
@@ -35,16 +35,16 @@ public class LoginServlet extends HttpServlet {
 		String password = req.getParameter("Password");
 
 		try{
-			String URL = "https://euromonitorpoc.oktapreview.com";
-			String APIKEY = "000Bt4MM9juwLryGcsbHpannrwCb3d8i9vd5Z288Hk";	
+			String URL = "https://prs-poc.oktapreview.com";
+			String APIKEY = "00SQ0wjP6mM48CvB-gt6Iuv9QgdSuX3MizQSK-xdkw";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentialsAndCookieToken(username, password);
 			String token = mySession.getCookieToken();
-			String redirectUrl="https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml";
-			resp.sendRedirect("https://euromonitorpoc.oktapreview.com/login/sessionCookieRedirect?token=" + token + "&redirectUrl=" + redirectUrl);
+			String redirectUrl="https://prs-poc.oktapreview.com/app/prspoc_prsportal_1/exk6whu6m8os3Ak5q0h7/sso/saml";
+			resp.sendRedirect("https://prs-poc.oktapreview.com/login/sessionCookieRedirect?token=" + token + "&redirectUrl=" + redirectUrl);
 		} catch (ApiException e) {
-			resp.sendRedirect("/passport");
+			resp.sendRedirect("/portal");
 		}
 		return;
     }

@@ -35,19 +35,19 @@ public class FederationServlet extends HttpServlet {
                 String username = req.getParameter("UserName"); 
 
 		try{
-			String URL = "https://euromonitorpoc.oktapreview.com";
-			String APIKEY = "000Bt4MM9juwLryGcsbHpannrwCb3d8i9vd5Z288Hk";	
+			String URL = "https://prs-poc.oktapreview.com";
+			String APIKEY = "00SQ0wjP6mM48CvB-gt6Iuv9QgdSuX3MizQSK-xdkw";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			UserApiClient usersClient = new UserApiClient(oktaSettings);
 			User user = usersClient.getUser(username);
 			req.setAttribute("username",user.getProfile().getLogin());
 			if(user.getProfile().getUnmapped().get("idp") != null){
 
-			if(user.getProfile().getUnmapped().get("idp").equals("Euromonitor-Customer-A")){
+			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-A")){
 				req.setAttribute("idp","Euromonitor-Customer-A");
-				req.setAttribute("url","https://euromonitorpoc-customer.oktapreview.com/app/euromonitorpoccustomer_federationtoeuromonitorokta_1/exk6mpfc66b7p4HCJ0h7/sso/saml?RelayState=https://euromonitorpoc.oktapreview.com/app/euromonitorpoc_euromonitorpassport_1/exk6mqdgvsyvhEIE20h7/sso/saml");
+				req.setAttribute("url","https://prs-poc-customer.oktapreview.com/home/bookmark/0oa6wjidi9JJlZYb20h7/1280?fromHome=true");
 }
-			if(user.getProfile().getUnmapped().get("idp").equals("Euromonitor-Customer-B")){
+			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-B")){
 				req.setAttribute("idp","Euromonitor-Customer-B");
 				req.setAttribute("url","https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=RPID%3Dhttps%253A%252F%252Fwww.okta.com%252Fsaml2%252Fservice-provider%252Fspzotjljqwhhcttplpon%26RelayState%3Dhttps%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml");
 }
