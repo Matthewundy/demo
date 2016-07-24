@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <title>Euromonitor International - Log in</title>
+    <title>PRS - Log in</title>
 
     <link href="style/1.css" rel="stylesheet"/>
 
@@ -22,7 +22,7 @@
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
-                <img galabel="Home" gacategory="TopBanner" alt="Passport - Home" title="Passport - Home" cssclass="searchblock" id="PassportLogoImage" src="http://www.portal.euromonitor.com/Portal/Content/images/em-passport-logo.png" />
+                <img alt="PRS - Home" title="PRS - Home" src="images/prs_logo_red.png" />
             </a>
             <div class="mainNavWrap">
                 <ul class="mainNav loginNav">
@@ -50,19 +50,9 @@
         <div class="controlWrap">
             <div class="controlText">
                 <div class="controlHeadline">
-                    <h3>
-                        <span>FIND OUT MORE ABOUT PASSPORT</span>
-                    </h3>
                 </div>
                 <div class="controlElement">
                     <div class="text">
-                        <p>
-                            <img src="http://www.portal.euromonitor.com/Portal/Images/fpo-map-300x55.png">
-                        </p>
-                        <p>Welcome to Passport, Euromonitor International's gateway to global strategic intelligence. Registering will provide you access to our award winning database and analysis tools to help you.</p>
-
-                        <p>Go to Euromonitor.com to find out how you can register for Passport.</p>
-                        <a href="http://www.euromonitor.com/contact-us" title="Visit Euromonitor.com" target="_blank">Visit Euromonitor.com</a>
                     </div>
                 </div>
             </div>
@@ -114,10 +104,6 @@
                                 <label>Password:</label>
                                 <input data-val="true" data-val-required="The Password field is required." id="password" name="password" type="password" />
                             </div>
-                            <div class="row">
-                                <label>Subscription:</label>
-                                <input data-val="true" data-val-required="The Subscription field is required." id="sub" name="sub" type="password" />
-                            </div>
 
 
 
@@ -156,16 +142,6 @@
 
         </div>
         <div class="push"></div>
-    </div>
-    <div id="footerWrap">
-        <div id="footer">
-            <div class="emiLogo"><a href="http://www.euromonitor.com" target="_blank"><img src="http://www.portal.euromonitor.com/Portal/Images/logos/EMI-footerlogo.png" width="139" height="20" /></a></div>
-            <ul class="footerLinks">
-                <li><a GAAction="Privacy" GACategory="Policy" GALabel="Privacy Policy" href="#" target="_blank">Privacy Policy</a> | </li>
-                <li><a GAAction="Cookie" GACategory="Policy" GALabel="Cookie Policy" href="#"" target="_blank">Cookie Policy</a> | </li>
-                <li> &copy; Euromonitor International 2016 </li>
-            </ul>
-        </div>
     </div>
 
 </body>

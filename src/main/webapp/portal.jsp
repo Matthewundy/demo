@@ -117,16 +117,6 @@
         </div>
         <div class="push"></div>
     </div>
-    <div id="footerWrap">
-        <div id="footer">
-            <div class="emiLogo"><a href="http://www.euromonitor.com" target="_blank"><img src="http://www.portal.euromonitor.com/Portal/Images/logos/EMI-footerlogo.png" width="139" height="20" /></a></div>
-            <ul class="footerLinks">
-                <li><a GAAction="Privacy" GACategory="Policy" GALabel="Privacy Policy" href="#" target="_blank">Privacy Policy</a> | </li>
-                <li><a GAAction="Cookie" GACategory="Policy" GALabel="Cookie Policy" href="#"" target="_blank">Cookie Policy</a> | </li>
-                <li> &copy; Euromonitor International 2016 </li>
-            </ul>
-        </div>
-    </div>
 
 </body>
 </html>
