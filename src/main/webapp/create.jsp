@@ -44,7 +44,7 @@
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
-        <h1>Welcome to Passport</h1>
+        <h1>Welcome to PRS</h1>
     </div>
     <div class="colM">
         <div class="controlWrap">
