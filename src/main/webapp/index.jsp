@@ -1,6 +1,6 @@
 <html>
     <body>
-	<img src="prs-logo-red.png" />
+	<img src="images/prs-logo-red.png" />
 	<p>
 		<a href="/portal">Open Portal</a>
 	</p>
