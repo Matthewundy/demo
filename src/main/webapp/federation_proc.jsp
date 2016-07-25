@@ -16,7 +16,7 @@ response.sendRedirect(redirectURL);
 }
 
 if(request.getParameter("IdentityProvider").equals("PRS-Customer-B")){
-String redirectURL = "https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=https%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml";
+String redirectURL = "https://prs-poc-customerb.oktapreview.com/home/bookmark/0oa6wxkuvt5jJfSMG0h7/1280";
 response.sendRedirect(redirectURL);
 }
 

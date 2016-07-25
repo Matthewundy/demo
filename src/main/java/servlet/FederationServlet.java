@@ -49,7 +49,7 @@ public class FederationServlet extends HttpServlet {
 }
 			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-B")){
 				req.setAttribute("idp","PRS-Customer-B");
-				req.setAttribute("url","https://fs.demo-iam.com/adfs/ls/IdpInitiatedSignOn.aspx?RelayState=RPID%3Dhttps%253A%252F%252Fwww.okta.com%252Fsaml2%252Fservice-provider%252Fspzotjljqwhhcttplpon%26RelayState%3Dhttps%3A%2F%2Feuromonitorpoc.oktapreview.com%2Fapp%2Feuromonitorpoc_euromonitorpassport_1%2Fexk6mqdgvsyvhEIE20h7%2Fsso%2Fsaml");
+				req.setAttribute("url","https://prs-poc-customerb.oktapreview.com/home/bookmark/0oa6wxkuvt5jJfSMG0h7/1280");
 }
 } else {
 	req.setAttribute("idp","None - local user");
