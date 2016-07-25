@@ -14,7 +14,7 @@
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
-		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://prs-poc.okta.com'); }
+		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://prs-poc.oktapreview.com'); }
 		  }
 		);
 	</script>
