@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <title>PRS - Log in</title>
+    <title>PRS</title>
 
     <link href="style/1.css" rel="stylesheet"/>
 
