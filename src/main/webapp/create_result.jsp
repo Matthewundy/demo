@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <title>PRS - Log in</title>
+    <title>Emirates - Log in</title>
 
     <link href="style/1.css" rel="stylesheet"/>
 
@@ -22,7 +22,7 @@
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
-                <img alt="PRS - Home" title="PRS - Home" id="PassportLogoImage" src="images/prs_logo_red.png" />
+                <img alt="Emirates - Home" title="Emirates - Home" id="PassportLogoImage" src="images/emirates.png" />
             </a>
             <div class="mainNavWrap">
                 <ul class="mainNav loginNav">

@@ -10,12 +10,12 @@
 </head>
 <body>
 <%
-if(request.getParameter("IdentityProvider").equals("PRS-Customer-A")){
+if(request.getParameter("IdentityProvider").equals("Emirates-Customer-A")){
 String redirectURL = "https://prs-poc-customer.oktapreview.com/home/bookmark/0oa6wjidi9JJlZYb20h7/1280";
 response.sendRedirect(redirectURL);
 }
 
-if(request.getParameter("IdentityProvider").equals("PRS-Customer-B")){
+if(request.getParameter("IdentityProvider").equals("Emirates-Customer-B")){
 String redirectURL = "https://prs-poc-customerb.oktapreview.com/home/bookmark/0oa6wxkuvt5jJfSMG0h7/1280";
 response.sendRedirect(redirectURL);
 }
