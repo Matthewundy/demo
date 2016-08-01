@@ -9,8 +9,34 @@
 	<div id="okta-login-container"></div>
 	<script type="text/javascript">
 		var baseUrl = 'https://platformdemo.oktapreview.com';
-		var oktaSignIn = new OktaSignIn({baseUrl: baseUrl});
 		
+var oktaSignIn = new OktaSignIn({
+  baseUrl: 'https://platformdemo.oktapreview.com',
+  features: {
+    rememberDevice: false,
+  },
+  // OIDC options
+  clientId: 'GHtf9iJdr60A9IYrR0jw',
+  redirectUri: 'https://acme.com/oauth2/callback/home',
+  authScheme: 'OAUTH2',
+  authParams: {
+    responseType: 'id_token',
+    responseMode: 'okta_post_message',
+    scope: [
+      'openid',
+      'email',
+      'profile',
+      'address',
+      'phone'
+    ]
+  },
+  idpDisplay: 'PRIMARY',
+  idps: [{
+    'type': 'FACEBOOK',
+    'id': '0oa746sj5iiUuvcIH0h7'
+  }]
+});
+
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
