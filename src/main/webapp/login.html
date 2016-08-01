@@ -8,13 +8,13 @@
 <body>
 	<div id="okta-login-container"></div>
 	<script type="text/javascript">
-		var baseUrl = 'https://prs-poc.oktapreview.com';
+		var baseUrl = 'https://platformdemo.oktapreview.com';
 		var oktaSignIn = new OktaSignIn({baseUrl: baseUrl});
 		
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
-		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://prs-poc.oktapreview.com'); }
+		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://platformdemo.oktapreview.com'); }
 		  }
 		);
 	</script>

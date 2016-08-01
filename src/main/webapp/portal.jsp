@@ -23,7 +23,7 @@
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
-                <img galabel="Home" gacategory="TopBanner" alt="PRS - Home" title="PRS - Home" cssclass="searchblock" id="PassportLogoImage" src="images/prs_logo_red.png" />
+                <img galabel="Home" gacategory="TopBanner" alt="PRS - Home" title="PRS - Home" cssclass="searchblock" id="PassportLogoImage" src="images/emirates.png" />
             </a>
             <div class="mainNavWrap">
                 <ul class="mainNav loginNav">
