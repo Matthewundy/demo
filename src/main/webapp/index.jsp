@@ -1,8 +1,8 @@
 <html>
     <body>
-	<img src="images/prs_logo_red.png" />
+	<img src="images/emirates.png" />
 	<p>
-		<a href="/portal">Open Portal</a>
+		<a href="/portal">Portal Demo</a>
 	</p>
     </body>
 </html>
