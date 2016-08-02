@@ -32,6 +32,8 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
 	if(req.getParameter("token") != null){
 		
+		req.setAttribute("saml",req.getParameter("token"));
+		req.setAttribute("username","");
     		req.getRequestDispatcher("portal.jsp").forward(req, resp);
 	} else {
     		req.getRequestDispatcher("login.jsp").forward(req, resp);
