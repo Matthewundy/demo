@@ -45,12 +45,11 @@ oktaSignIn.renderEl({
     el: '#sign-in-container'
   },
   function (res) {
-    res.idToken
-    res.claims
+    window.alert(res.idToken);
+    window.alert(res.claims);
   },
   function (err) {
     handleErrors(err);
   });
 	</script>
-</script>
 </body>
