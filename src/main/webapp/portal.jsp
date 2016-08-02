@@ -20,17 +20,7 @@
 </head>
 <body class="top" id="loginPage">
 
-    <div id="siteWrap">
-        <div id="mast">
-            <a href="#" class="searchblock">
                 <img alt="Emirates - Home" title="Emirates - Home" src="images/emirates.png" />
-            </a>
-            <div class="mainNavWrap">
-                <ul class="mainNav loginNav">
-                    <li class="first"><span>Login</span></li>
-                </ul>
-            </div>
-        </div>
         <div id="main">
             
 
