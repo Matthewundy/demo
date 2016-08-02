@@ -35,12 +35,30 @@ idps: [{
     'id': '0oa746sj5iiUuvcIH0h7'
   }]
 });
+
 oktaSignIn.renderEl({
-    el: '#sign-in-container'
+    el: '#sign-in-container',
+    features: {
+      rememberDevice: false,
+    },
+    labels: {
+      'primaryauth.title': 'Partner login',
+      'help': 'Click here for more help'
+    },
+    helpLinks: {
+      'help': 'https://acme.com/custom/help'
+    }
   },
   function (res) {
+    if (res.status === 'SUCCESS') {
+      // Success callback
+      res.session.setCookieAndRedirect('https://acme.com/home');
+    }
   },
   function (err) {
+    // Error callback
+    alert(err.message);
   });
+
 </script>
 </body>
