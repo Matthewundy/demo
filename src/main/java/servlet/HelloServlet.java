@@ -30,7 +30,12 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-    	req.getRequestDispatcher("login.jsp").forward(req, resp);
+	if(req.getParameter("token") != null){
+		
+    		req.getRequestDispatcher("portal.jsp").forward(req, resp);
+	} else {
+    		req.getRequestDispatcher("login.jsp").forward(req, resp);
+	}
 		return;
     }
     
