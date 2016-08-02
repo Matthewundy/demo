@@ -44,8 +44,14 @@ idps: [{
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
-			
-			window.alert("Social Authentication Successful\nOpenID ID Token\n" + res.idToken);
+			var a = document.createElement('a');
+			var appUrl  = "https://platformdemo.herokuapp.com/portal";
+			var linkText = "Open SAML Application";
+			a.appendChild(linkText);
+			a.title = "Open SAML Application";
+			a.href = linkText;
+			document.body.appendChild(a);
+			window.alert("Social Authentication Successful\nOpenID ID Claims\n" + res.claims);
 		  }
 		);
 	</script>
