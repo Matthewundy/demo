@@ -21,8 +21,9 @@ var oktaSignIn = new OktaSignIn({
   redirectUri: 'https://platformdemo.herokuapp.com/loginwidget.html',
   authScheme: 'OAUTH2',
   authParams: {
+    display: 'none',
     responseType: 'id_token',
-    responseMode: 'okta_post_message',
+    responseMode: 'form_post',
     scope: [
       'openid',
       'email',
@@ -46,6 +47,6 @@ idps: [{
 		  function (res) {
 		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://platformdemo.oktapreview.com'); }
 		  }
-
-</script>
+		);
+	</script>
 </body>
