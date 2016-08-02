@@ -38,12 +38,6 @@ idps: [{
 
 oktaSignIn.renderEl({
     el: '#sign-in-container',
-    features: {
-      rememberDevice: false,
-    },
-    helpLinks: {
-      'help': 'https://acme.com/custom/help'
-    }
   },
   function (res) {
     if (res.status === 'SUCCESS') {
