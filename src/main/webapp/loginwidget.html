@@ -49,5 +49,17 @@ idps: [{
 		  }
 		);
 	</script>
-<a href="https://platformdemo.oktapreview.com/oauth2/v1/authorize?client_id=CbrltpZj8j0e13L99Y4P&redirect_uri=https://platformdemo.herokuapp.com/loginwidget.html&response_type=id_token&response_mode=okta_post_message&state=U3oPgai9oXAfLhP0o04sUiqM4MMuW8KJy4Haxil37p1WtTWyudSR86GSFbNW9GsD&nonce=5oMNqKp2kCt3fC4hcXNYHrUEh7eoG1109znN2dGsReuntquPdpuSI8tOnQ33W8Jv&display=popup&idp=0oa746sj5iiUuvcIH0h7&scope=openid%20email%20profile">TEST</a>
+	<script type="text/javascript">
+	function receiveMessage(event)
+{
+  // Do we trust the sender of this message?  (might be
+  // different from what we originally opened, for example).
+ // if (event.origin !== "http://example.org")
+ i//   return;
+
+  event.source is popup
+  event.data is "hi there yourself!  the secret response is: rheeeeet!"
+}
+window.addEventListener("message", receiveMessage, false);
+	</script>
 </body>
