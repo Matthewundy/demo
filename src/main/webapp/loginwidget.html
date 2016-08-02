@@ -45,7 +45,7 @@ idps: [{
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
-		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://platformdemo.oktapreview.com'); }
+			window.alert(res.id_token);
 		  }
 		);
 	</script>
