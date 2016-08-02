@@ -41,20 +41,16 @@ idps: [{
     'id': '0oa746sj5iiUuvcIH0h7'
   }]
 });
-
-		oktaSignIn.renderEl(
-		  { el: '#okta-login-container' },
-		  function (res) {
-		    if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://platformdemo.oktapreview.com'); }
-		  }
-		);
+oktaSignIn.renderEl({
+    el: '#sign-in-container'
+  },
+  function (res) {
+    res.idToken
+    res.claims
+  },
+  function (err) {
+    handleErrors(err);
+  });
 	</script>
-<script type="text/javascript">
-function receiveMessage(event)
-{
-  event.source is popup
-  event.data is "hi there yourself!  the secret response is: rheeeeet!"
-}
-window.addEventListener("message", receiveMessage, false);
 </script>
 </body>
