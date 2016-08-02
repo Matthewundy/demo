@@ -39,11 +39,8 @@ oktaSignIn.renderEl({
     el: '#sign-in-container'
   },
   function (res) {
-    window.alert(res.idToken);
-    window.alert(res.claims);
   },
   function (err) {
-    handleErrors(err);
   });
 </script>
 </body>
