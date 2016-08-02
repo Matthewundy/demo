@@ -8,6 +8,14 @@
 </head>
 <body>
 	<div id="okta-login-container"></div>
+	<div id="nav">
+		<h3>Authentication Successful</h4>
+		<p><a href="https://platformdemo.oktapreview.com/home/platformdemo_portal_1/0oa769mcv2rZbkc260h7/aln769mh75K0laQNB0h7">Open SAML Application</a></p>
+		<p><a id="openidlink" href="https://platformdemo.herokuapp.com/portal?token=">Open OpenID Connect Application</a></p>
+	</div>
+	<script type="text/javascript">
+		document.getElementById("nav").style.display = 'none';
+	</script>
 	<script type="text/javascript">
 		var baseUrl = 'https://platformdemo.oktapreview.com';
 		
@@ -45,24 +53,9 @@ idps: [{
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
-			var a = document.createElement('a');
-			var appUrl  = "https://platformdemo.oktapreview.com/home/platformdemo_portal_1/0oa769mcv2rZbkc260h7/aln769mh75K0laQNB0h7";
-			var linkText = document.createTextNode("Open SAML Application");
-			a.appendChild(linkText);
-			a.title = "Open SAML Application";
-			a.href = appUrl;
-			var a2 = document.createElement('a');
-			var appUrl2  = "https://platformdemo.herokuapp.com/portal?token=" + res.idToken;
-			var linkText2 = document.createTextNode("Open OpenID Connect Application");
-			a2.appendChild(linkText2);
-			a2.title = "Open OpenID Connect  Application";
-			a2.href = appUrl2;
-			document.body.appendChild(a);
-			document.body.appendChild(document.createElement('br'));
-			document.body.appendChild(a2);
-			window.alert("Social Authentication Successful\nOpenID ID Claims\n" + res.claims);
-			var loginDiv = document.getElementById('okta-login-container');
-			loginDiv.style.display = 'none';
+			document.getElementById('openidlink').href="https://platformdemo.herokuapp.com/portal?token=" +res.idToken;
+			document.getElementById('okta-login-container').style.display = 'none';
+			document.getElementById("nav").style.display = 'none';
 		  }
 		);
 	</script>
