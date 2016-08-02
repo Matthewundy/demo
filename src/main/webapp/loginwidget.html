@@ -50,7 +50,7 @@ idps: [{
 			var linkText = document.createTextNode("Open SAML Application");
 			a.appendChild(linkText);
 			a.title = "Open SAML Application";
-			a.href = linkText;
+			a.href = appUrl;
 			document.body.appendChild(a);
 			window.alert("Social Authentication Successful\nOpenID ID Claims\n" + res.claims);
 		  }
