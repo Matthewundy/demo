@@ -46,12 +46,19 @@ idps: [{
 		  { el: '#okta-login-container' },
 		  function (res) {
 			var a = document.createElement('a');
-			var appUrl  = "https://platformdemo.herokuapp.com/portal";
+			var appUrl  = "https://platformdemo.oktapreview.com/home/platformdemo_portal_1/0oa769mcv2rZbkc260h7/aln769mh75K0laQNB0h7";
 			var linkText = document.createTextNode("Open SAML Application");
 			a.appendChild(linkText);
 			a.title = "Open SAML Application";
 			a.href = appUrl;
 			document.body.appendChild(a);
+			var a2 = document.createElement('a');
+			var appUrl2  = "https://platformdemo.herokuapp.com/portal";
+			var linkText2 = document.createTextNode("Open SAML Application");
+			a2.appendChild(linkText2);
+			a2.title = "Open OpenID Connect  Application";
+			a2.href = appUrl2;
+			document.body.appendChild(a2);
 			window.alert("Social Authentication Successful\nOpenID ID Claims\n" + res.claims);
 		  }
 		);
