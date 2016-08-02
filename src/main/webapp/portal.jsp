@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <title>PRS</title>
+    <title>Emirates</title>
 
     <link href="style/1.css" rel="stylesheet"/>
 
@@ -23,7 +23,7 @@
     <div id="siteWrap">
         <div id="mast">
             <a href="#" class="searchblock">
-                <img galabel="Home" gacategory="TopBanner" alt="PRS - Home" title="PRS - Home" cssclass="searchblock" id="PassportLogoImage" src="images/emirates.png" />
+                <img alt="Emirates - Home" title="Emirates - Home" src="images/emirates.png" />
             </a>
             <div class="mainNavWrap">
                 <ul class="mainNav loginNav">
@@ -45,7 +45,7 @@
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
-        <h1>Welcome to PRS</h1>
+        <h1>Welcome to Emirates</h1>
     </div>
     <div class="colM">
         <div class="controlWrap">
