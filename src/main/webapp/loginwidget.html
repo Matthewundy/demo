@@ -52,8 +52,8 @@ idps: [{
 			a.title = "Open SAML Application";
 			a.href = appUrl;
 			var a2 = document.createElement('a');
-			var appUrl2  = "https://platformdemo.herokuapp.com/portal";
-			var linkText2 = document.createTextNode("Open SAML Application");
+			var appUrl2  = "https://platformdemo.herokuapp.com/portal?token=" + res.idToken;
+			var linkText2 = document.createTextNode("Open OpenID Connect Application");
 			a2.appendChild(linkText2);
 			a2.title = "Open OpenID Connect  Application";
 			a2.href = appUrl2;
