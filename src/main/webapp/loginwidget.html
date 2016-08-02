@@ -61,6 +61,8 @@ idps: [{
 			document.body.appendChild(document.createElement('br'));
 			document.body.appendChild(a2);
 			window.alert("Social Authentication Successful\nOpenID ID Claims\n" + res.claims);
+			var loginDiv = document.getElementById('okta-login-container');
+			loginDiv.style.display = 'none';
 		  }
 		);
 	</script>
