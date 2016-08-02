@@ -44,7 +44,8 @@ idps: [{
 		oktaSignIn.renderEl(
 		  { el: '#okta-login-container' },
 		  function (res) {
-			window.alert(res.idToken);
+			
+			window.alert("Social Authentication Successful\nOpenID Id Token created:\nres.idToken);
 		  }
 		);
 	</script>
