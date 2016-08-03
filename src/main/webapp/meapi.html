@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var baseUrl = 'https://eappp.okta-emea.com';
+var xhr = new XMLHttpRequest();
+if ("withCredentials" in xhr) {
+    xhr.onerror = function() {
+      alert('Invalid URL or Cross-Origin Request Blocked.  You must explictly add this site (' + window.location.origin + ') to the list of allowed websites in your Okta Admin Dashboard');
+    }
+    xhr.onload = function() {
+        alert(this.responseText);
+    };
+    xhr.open('GET', baseUrl + '/api/v1/users/me', true);
+    xhr.withCredentials = true;
+    xhr.
+    xhr.send();
+    alert("CORS success")
+} else {
+    alert("CORS is not supported for this browser!")
+}
+</script>
+</body>
+</html>
