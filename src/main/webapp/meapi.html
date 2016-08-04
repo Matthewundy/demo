@@ -15,6 +15,7 @@ if ("withCredentials" in xhr) {
     };
     xhr.open('GET', baseUrl + '/api/v1/users/me', true);
     xhr.withCredentials = true;
+   xhr.setRequestHeader("Accept","application/json");
     xhr.send();
     alert("CORS success")
 } else {
