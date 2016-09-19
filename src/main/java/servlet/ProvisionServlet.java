@@ -25,7 +25,7 @@ import org.xml.sax.SAXException;
         name = "MyServlet",
         urlPatterns = {"/portal"}
     )
-public class HelloServlet extends HttpServlet {
+public class ProvisionServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
