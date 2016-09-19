@@ -9,81 +9,14 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
 
-    <title>Emirates - Log in</title>
-
-    <link href="style/1.css" rel="stylesheet"/>
-
-    <link href="style/2.css" rel="stylesheet"/>
-
-    <link href="style/3.css" rel="stylesheet"/>
-
+    <title>Engie - Log in</title>
+    <link href="style/engie.css" rel="stylesheet"/>
 </head>
 <body class="top" id="loginPage">
-    <div id="siteWrap">
-        <div id="mast">
-            <a href="#" class="searchblock">
-                <img alt="Emirates - Home" title="Emirates - Home" src="images/emirates.png" />
-            </a>
-            <div class="mainNavWrap">
-                <ul class="mainNav loginNav">
-                    <li class="first"><span>Login</span></li>
-                </ul>
-            </div>
-        </div>
-        <div id="main">
-            
-
-
-<!--[if IE 8]>
-        <link rel="stylesheet" type="text/css" href="~/Stylesheets/ie8-styles.css" />
-    <![endif]-->
-<!--[if IE 7]>
-    <link rel="stylesheet" type="text/css" href="~/Stylesheets/ie7-styles.css" />
-<![endif]-->
-
-<div class="cols1M1W">
-
-    <div id="pageTitle" class="pageHeadline">
-        <h1>Welcome to Emirates</h1>
-    </div>
-    <div class="colM">
-        <div class="controlWrap">
-            <div class="controlText">
-                <div class="controlHeadline">
-                </div>
-                <div class="controlElement">
-                    <div class="text">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="colW">
-
-
-<form action="/create" method="post">            <div class="controlWrap">
-                <div class="controlFormBlock welcomeLogin">
-                    <div class="controlHeadline">
-                        <h3>
-                            <span>LOGIN</span>
-                        </h3>
-                    </div>
-                    <div class="title">
-                    </div>
-
-                    <div class="validation-summary-errors">
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </div>
-
-                    <section id="loginForm">
-
-
+<img src="images/engie-logo.png" style="width:200px;height:70px />
+<form action="/create" method="post">            
                         <div class="loginFormItems">
-                            <div class="validationArea">
                                 
-                            </div>
                             <div class="row">
                                 <label>Login:</label>
                                 <input data-val="true" data-val-required="The Login field is required." id="login" name="login" type="text" value="" />
@@ -107,27 +40,11 @@
 
 
 
-                                <div class="rememberMe">
-                                    <input id="btnLogin" type="submit" class="stdBtn submitBtn loginBtn" value="Register &rsaquo;" gacategory="Log In" gaaction="Submit" galabel="Register" />
-                                    </span>
-                                    
-                                </div>
-
                             </div>
                             
-                            <div class="row altLogin">
-                            </div>
 
-                            <div class="row arrivingFrom">
-                            </div>
 
-                        </div>
-
-                    </section>
-
-                </div>
-            </div>
-</form>    </div>
+</form>
 
 </div>
 

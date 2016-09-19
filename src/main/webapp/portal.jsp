@@ -20,7 +20,7 @@
 </head>
 <body class="top" id="loginPage">
 
-                <img alt="Emirates - Home" title="Emirates - Home" src="images/emirates.png" />
+                <img alt="Engie - Home" title="Engie - Home" src="images/engie-logo.png" />
         <div id="main">
             
 
@@ -35,7 +35,7 @@
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
-        <h1>Welcome to Emirates</h1>
+        <h1>Welcome to Engie</h1>
     </div>
     <div class="colM">
         <div class="controlWrap">
