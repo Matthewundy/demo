@@ -1,6 +1,6 @@
 <html>
     <body>
-	<img src="images/engie-logo.png" />
+	<img style="width:200px;height:70px;" src="images/engie-logo.png" />
 	<p>
 		<a href="/loginwidget.html">Social Authentication</a>
 	</p>
