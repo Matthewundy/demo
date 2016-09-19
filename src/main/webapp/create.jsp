@@ -38,7 +38,7 @@
                                 <input data-val="true" data-val-required="The Password field is required." id="password" name="password" type="password" />
                             </div>
 
-
+				<input type="submit" value="Submit" />
 
                             </div>
                             
