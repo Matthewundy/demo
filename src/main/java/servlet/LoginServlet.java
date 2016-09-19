@@ -30,19 +30,25 @@ public class LoginServlet extends HttpServlet {
     
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-		
+	        String redirectUrl = new String();
+
+		if(req.getParameter("fromURI") != null){
+			redirectUrl = req.getParameter("fromURI");
+		} else {
+			redirectUrl = "https://platformdemo.herokuapp.com/nofromuri.html";
+		}	
                 String username = req.getParameter("UserName"); 
 		String password = req.getParameter("Password");
 
 		try{
-			String URL = "https://prs-poc.oktapreview.com";
-			String APIKEY = "00SQ0wjP6mM48CvB-gt6Iuv9QgdSuX3MizQSK-xdkw";	
+			String URL = "https://platformdemo.oktapreview.com";
+			String APIKEY = "00KDoImEGLyvlD8tv3VgJHkPYIg0Oox0vXG6W2HqBI";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentialsAndCookieToken(username, password);
 			String token = mySession.getCookieToken();
-			String redirectUrl="https://prs-poc.oktapreview.com/app/prspoc_prsportal_1/exk6whu6m8os3Ak5q0h7/sso/saml";
-			resp.sendRedirect("https://prs-poc.oktapreview.com/login/sessionCookieRedirect?token=" + token + "&redirectUrl=" + redirectUrl);
+			String redirectUrl="";
+			resp.sendRedirect(redirectUrl);
 		} catch (ApiException e) {
 			resp.sendRedirect("/portal");
 		}
