@@ -13,7 +13,7 @@
 <body>
   <img alt="engie" title="engie" src="images/engie-logo.png" style="width:200px;height:70px" />
   <form action="/login" method="post">
-<input type="hidden" name="uri" value="<%= request.getParameter("fromURI") %>" />
+<input type="hidden" name="fromURI" value="<%= request.getParameter("fromURI") %>" />
     <p><label>Email Address</label></p>
     <p><input id="UserName" name="UserName" type="text" value="" /></p>
     <p><label>Password:</label></p>
