@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet {
 		String password = req.getParameter("Password");
 
 		try{
-			String URL = "https://platformdemo.oktapreview.com";
+			String URL = "https://platformdemo.oktapreview.com/";
 			String APIKEY = "00KDoImEGLyvlD8tv3VgJHkPYIg0Oox0vXG6W2HqBI";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
