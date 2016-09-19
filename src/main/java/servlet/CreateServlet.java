@@ -40,8 +40,8 @@ public class CreateServlet extends HttpServlet {
 		String sub = req.getParameter("sub");
 
 		try{
-			String URL = "https://prs-poc.oktapreview.com";
-			String APIKEY = "00SQ0wjP6mM48CvB-gt6Iuv9QgdSuX3MizQSK-xdkw";	
+			String URL = "https://platformdemo.oktapreview.com";
+			String APIKEY = "00KDoImEGLyvlD8tv3VgJHkPYIg0Oox0vXG6W2HqBI";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			UserApiClient usersClient = new UserApiClient(oktaSettings);
 			User myUser = usersClient.createUser(firstName, lastName, login, email);
