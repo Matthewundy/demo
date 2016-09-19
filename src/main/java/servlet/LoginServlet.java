@@ -32,9 +32,10 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
 	        String redirectUrl = "";
 
-		if(!req.getParameter("fromURI").equals("null"){
+		if(req.getParameter("fromURI") != null{
 			redirectUrl = req.getParameter("fromURI");
-		} else {
+		}
+		if(redirectUrl.equals("null")) {
 			redirectUrl = "https://platformdemo.herokuapp.com/nofromuri.html";
 		}	
                 String username = req.getParameter("UserName"); 
