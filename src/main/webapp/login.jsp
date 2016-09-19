@@ -11,13 +11,13 @@
     <link href="style/engie.css" rel="stylesheet"/>
 </head>
 <body>
-  <img alt="engie" title="engie" src="images/engie-logo.png" />
+  <img alt="engie" title="engie" src="images/engie-logo.png" style="width:200px;height:70px" />
   <form action="/login" method="post">
-    <label>Email Address:</label>
-    <input id="UserName" name="UserName" type="text" value="" />
-    <label>Password:</label>
-    <input id="Password" name="Password" type="password" />
-    <input type="submit" value="submit" />
+    <p><label>Email Address</label></p>
+    <p><input id="UserName" name="UserName" type="text" value="" /></p>
+    <p><label>Password:</label></p>
+    <p><input id="Password" name="Password" type="password" /></p>
+    <p><input type="submit" value="submit" /></p>
   </form>
 </body>
 </html>
