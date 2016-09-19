@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
     
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-	        String redirectUrl = new String();
+	        String redirectUrl = "";
 
 		if(req.getParameter("fromURI") != null){
 			redirectUrl = req.getParameter("fromURI");
@@ -47,7 +47,6 @@ public class LoginServlet extends HttpServlet {
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentialsAndCookieToken(username, password);
 			String token = mySession.getCookieToken();
-			String redirectUrl="";
 			resp.sendRedirect(redirectUrl);
 		} catch (ApiException e) {
 			resp.sendRedirect("/portal");
