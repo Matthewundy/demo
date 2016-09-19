@@ -17,28 +17,17 @@
 <form action="/create" method="post">            
                         <div class="loginFormItems">
                                 
-                            <div class="row">
-                                <label>Login:</label>
-                                <input id="login" name="login" type="text" value="" />
-                            </div>
-                            <div class="row">
-                                <label>Email Address:</label>
-                                <input id="email" name="email" type="text" value="" />
-                            </div>
-                            <div class="row">
-                                <label>First Name:</label>
-                                <input id="firstName" name="firstName" type="text" value="" />
-                            </div>
-                            <div class="row">
-                                <label>Last Name:</label>
-                                <input id="lastName" name="lastName" type="text" value="" />
-                            </div>
-                            <div class="row">
-                                <label>Password:</label>
-                                <input id="password" name="password" type="password" />
-                            </div>
-
-				<input type="submit" value="Submit" />
+                                <p><label>Login:</label></p>
+                                <p><input id="login" name="login" type="text" value="" /></p>
+                                <p><label>Email Address:</label></p>
+                                <p><input id="email" name="email" type="text" value="" /></p>
+                                <p><label>First Name:</label></p>
+                                <p><input id="firstName" name="firstName" type="text" value="" /></p>
+                                <p><label>Last Name:</label></p>
+                                <p><input id="lastName" name="lastName" type="text" value="" /></p>
+                                <p><label>Password:</label></p>
+                                <p><input id="password" name="password" type="password" /></p>
+				<p><input type="submit" value="Submit" /></p>
 
                             </div>
                             
