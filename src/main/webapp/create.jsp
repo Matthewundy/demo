@@ -13,7 +13,7 @@
     <link href="style/engie.css" rel="stylesheet"/>
 </head>
 <body class="top" id="loginPage">
-<img src="images/engie-logo.png" style="width:200px;height:70px />
+<img src="images/engie-logo.png" style="width:200px;height:70px" />
 <form action="/create" method="post">            
                         <div class="loginFormItems">
                                 
