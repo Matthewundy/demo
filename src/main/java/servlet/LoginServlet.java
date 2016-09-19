@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
 			SessionApiClient sessionClient = new SessionApiClient(oktaSettings);
 			Session mySession = sessionClient.createSessionWithCredentialsAndCookieToken(username, password);
 			String token = mySession.getCookieToken();
-response.sendRedirect("https://platformdemo.oktapreview.com/login/sessionCookieRedirect?token=" + cookieToken + "&redirectUrl=" + redirectUrl);
+                        resp.sendRedirect("https://platformdemo.oktapreview.com/login/sessionCookieRedirect?token=" + cookieToken + "&redirectUrl=" + redirectUrl);
 		} catch (ApiException e) {
 			resp.sendRedirect("/portal");
 		}
