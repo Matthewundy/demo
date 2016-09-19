@@ -19,23 +19,23 @@
                                 
                             <div class="row">
                                 <label>Login:</label>
-                                <input data-val="true" data-val-required="The Login field is required." id="login" name="login" type="text" value="" />
+                                <input id="login" name="login" type="text" value="" />
                             </div>
                             <div class="row">
                                 <label>Email Address:</label>
-                                <input data-val="true" data-val-required="The Email field is required." id="email" name="email" type="text" value="" />
+                                <input id="email" name="email" type="text" value="" />
                             </div>
                             <div class="row">
                                 <label>First Name:</label>
-                                <input data-val="true" data-val-required="The First Name field is required." id="firstName" name="firstName" type="text" value="" />
+                                <input id="firstName" name="firstName" type="text" value="" />
                             </div>
                             <div class="row">
                                 <label>Last Name:</label>
-                                <input data-val="true" data-val-required="The Last Name field is required." id="lastName" name="lastName" type="text" value="" />
+                                <input id="lastName" name="lastName" type="text" value="" />
                             </div>
                             <div class="row">
                                 <label>Password:</label>
-                                <input data-val="true" data-val-required="The Password field is required." id="password" name="password" type="password" />
+                                <input id="password" name="password" type="password" />
                             </div>
 
 				<input type="submit" value="Submit" />
@@ -47,20 +47,6 @@
 </form>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-        </div>
-        <div class="push"></div>
-    </div>
-
 </body>
 </html>
 
