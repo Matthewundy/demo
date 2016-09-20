@@ -9,52 +9,14 @@
 <link rel="stylesheet" href="style/4.css" />
 </head>
 <body>
-<div class="site-wrapper">
-<div id="header">
-<div class="page-heading">Login</div>
-</div>
-<div id="main">
-<h1 class="main-heading">Federated Customer Log In</h1>
-<div class="error-messages"></div>
+<img src="images/engie-logo.png" title="engie" style="width:200px;height:70px" />
+<h3>Federated Sign In</h3>
 <p>Enter your username / email address</p>
-<form action="/federation" method="post"> <div class="form-row">
-<div class="form-input">
+<form action="/federation" method="post"> 
 
-<section id="loginForm">
-
-
-                        <div class="loginFormItems">
-                            <div class="validationArea">
-
-                                <span class="field-validation-valid vError" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
-                            </div>
-                            <div class="row">
-                                <label>Email Address:</label>
-                                <input data-val="true" data-val-required="The Email field is required." id="UserName" name="UserName" type="text" value="" />
-                            </div>
-
-
-
-
-
-
-                            <div class="row arrivingFrom">
-                            </div>
-
-                        </div>
-
-                    </section>
-
-
-</div>
-<input type="submit" value="Log In" />
-</div>
+ <p><label>Email Address:</label></p>
+ <p><input data-val="true" data-val-required="The Email field is required." id="UserName" name="UserName" type="text" value="" /></p>
+ <p><input type="submit" value="Log In" /></p>
 </form>
-<div class="row altLogin">
-                                <a href="/Login">Username / Password Log In</a>
-                            </div>
-</div>
-<div class="footer-push"></div>
-</div>
 </body>
 </html>
