@@ -10,11 +10,11 @@
 </head>
 <body>
 <img src="images/engie-logo.png" title="engie" style="width:200px;height:70px" />
-<h1>Federated Sign-In</h1>
-<p>Which organisation would you like to log in with?</p>
+<h3>Federated Sign-In</h3>
 <form action="federation_proc.jsp" method="post">
 <p><label>Select Organisation</label></p>
-<p><select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
+<p><select id="IdentityProvider" name="IdentityProvider" style="width:200px">
+<option value="">Select...</option>
 <option value="Engie-Unit-A">Engie Unit A</option>
 <option value="Engie-Unit-B">Engie Unit B</option>
 </select></p>
