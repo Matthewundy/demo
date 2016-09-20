@@ -45,7 +45,7 @@ public class FederationServlet extends HttpServlet {
 
 			if(user.getProfile().getUnmapped().get("idp").equals("platformdemo-1")){
 				req.setAttribute("idp","platformdemo-1");
-				req.setAttribute("url","https://prs-poc-customer.oktapreview.com/home/bookmark/0oa6wjidi9JJlZYb20h7/1280?fromHome=true");
+				req.setAttribute("url","https://platformdemo-1.oktapreview.com/home/bookmark/0oa88e5smy4ag4AAB0h7/1280?fromHome=true");
 }
 			if(user.getProfile().getUnmapped().get("idp").equals("platformdemo-2")){
 				req.setAttribute("idp","platformdemo-2");
