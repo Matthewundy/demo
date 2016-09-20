@@ -11,12 +11,11 @@
 <body>
 <img src="images/engie-logo.png" title="engie" style="width:200px;height:70px" />
 <h3>Federated Sign In</h3>
-<p>Enter your username / email address</p>
 <form action="/federation" method="post"> 
 
- <p><label>Email Address:</label></p>
- <p><input data-val="true" data-val-required="The Email field is required." id="UserName" name="UserName" type="text" value="" /></p>
- <p><input type="submit" value="Log In" /></p>
+ <p><label>Username or Email Address</label></p>
+ <p><input id="UserName" name="UserName" type="text" value="" /></p>
+ <p><input type="submit" value="Find Identity Provider" /></p>
 </form>
 </body>
 </html>
