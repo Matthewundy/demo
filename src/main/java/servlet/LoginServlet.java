@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 			redirectUrl = req.getParameter("fromURI");
 		}
 		if(redirectUrl.equals("null")) {
-			redirectUrl = "https://platformdemo.herokuapp.com/nofromuri.html";
+			redirectUrl = "https://platformdemo.herokuapp.com/welcome.jsp";
 		}	
                 String username = req.getParameter("UserName"); 
 		String password = req.getParameter("Password");
