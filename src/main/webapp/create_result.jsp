@@ -7,13 +7,12 @@
     <meta http-equiv="Expires" content="0" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache" />
-    <title>Emirates - Log in</title>
-    <link href="style/3.css" rel="stylesheet" style="width:200px;height:70px"/>
+    <title>Engie - Log in</title>
+    <link href="style/engie.css" rel="stylesheet"/>
 </head>
 <body>
+<img src="images/engie-logo.png" title="Engie" style="width:200px;height:70px" />
 <h3>Account Created</h3>
-<a href="/login">Log into your account</a><h3>Account Created</h3>
-<a href="/login">Log into your account</a><h3>Account Created</h3>
 <a href="/login">Log into your account</a>
 </body>
 </html>

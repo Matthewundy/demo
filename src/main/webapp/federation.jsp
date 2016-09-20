@@ -21,8 +21,8 @@
 <label>Organisation</label>
 <div class="form-input">
 <select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
-<option value="Emirates-Customer-A">Emirates Customer A</option>
-<option value="Emirates-Customer-B">Emirates Customer B</option>
+<option value="Engie-Customer-A">Engie Customer A</option>
+<option value="Engie-Customer-B">Engie Customer B</option>
 </select>
 </div>
 <input type="submit" value="Log In" />
