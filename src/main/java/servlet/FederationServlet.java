@@ -45,11 +45,11 @@ public class FederationServlet extends HttpServlet {
 
 			if(user.getProfile().getUnmapped().get("idp").equals("platformdemo-1")){
 				req.setAttribute("idp","platformdemo-1");
-				req.setAttribute("url","https://platformdemo-1.oktapreview.com/home/bookmark/0oa88e5smy4ag4AAB0h7/1280?fromHome=true");
+				req.setAttribute("url","https://platformdemo-1.oktapreview.com/home/bookmark/0oa88e5smy4ag4AAB0h7/1280");
 }
 			if(user.getProfile().getUnmapped().get("idp").equals("platformdemo-2")){
 				req.setAttribute("idp","platformdemo-2");
-				req.setAttribute("url","https://prs-poc-customerb.oktapreview.com/home/bookmark/0oa6wxkuvt5jJfSMG0h7/1280");
+				req.setAttribute("url","https://platformdemo-2.oktapreview.com/home/bookmark/0oa88dvx1fgb2EB6G0h7/1280");
 }
 } else {
 	req.setAttribute("idp","None - local user");
