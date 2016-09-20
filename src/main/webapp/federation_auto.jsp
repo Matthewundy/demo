@@ -51,7 +51,7 @@
 </div>
 </form>
 <div class="row altLogin">
-                                <a href="/portal">Username / Password Log In</a>
+                                <a href="/Login">Username / Password Log In</a>
                             </div>
 </div>
 <div class="footer-push"></div>

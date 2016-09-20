@@ -1,0 +1,1 @@
+https://platformdemo.oktapreview.com/oauth2/v1/authorize?client_id=U25YkOBT1xh2QcerHToY&response_type=code&response_mode=fragment&scope=openid email profile groups&redirect_uri=https://100000117.auth.konycloud.com/oauth2/callback&state=123&nonce=abc

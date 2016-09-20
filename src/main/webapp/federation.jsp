@@ -14,15 +14,15 @@
 <div class="page-heading">Login</div>
 </div>
 <div id="main">
-<h1 class="main-heading">Federated Customer Log In</h1>
+<h1 class="main-heading">Federated Unit Log In</h1>
 <div class="error-messages"></div>
 <p>Which organisation would you like to log in with?</p>
 <form action="federation_proc.jsp" method="post"> <div class="form-row">
 <label>Organisation</label>
 <div class="form-input">
 <select id="IdentityProvider" name="IdentityProvider"><option value="">Select...</option>
-<option value="Engie-Customer-A">Engie Customer A</option>
-<option value="Engie-Customer-B">Engie Customer B</option>
+<option value="Engie-Unit-A">Engie Unit A</option>
+<option value="Engie-Unit-B">Engie Unit B</option>
 </select>
 </div>
 <input type="submit" value="Log In" />
