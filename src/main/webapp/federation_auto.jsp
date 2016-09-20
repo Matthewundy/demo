@@ -13,7 +13,7 @@
 <h3>Federated Sign In</h3>
 <form action="/federation" method="post"> 
 
- <p><label>Username or Email Address</label></p>
+ <p><label>Enter Username or Email Address</label></p>
  <p><input id="UserName" name="UserName" type="text" value="" /></p>
  <p><input type="submit" value="Find Identity Provider" /></p>
 </form>
