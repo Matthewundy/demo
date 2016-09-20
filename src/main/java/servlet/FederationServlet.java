@@ -35,20 +35,20 @@ public class FederationServlet extends HttpServlet {
                 String username = req.getParameter("UserName"); 
 
 		try{
-			String URL = "https://prs-poc.oktapreview.com";
-			String APIKEY = "00SQ0wjP6mM48CvB-gt6Iuv9QgdSuX3MizQSK-xdkw";	
+			String URL = "https://platformdemo.oktapreview.com";
+			String APIKEY = "00KDoImEGLyvlD8tv3VgJHkPYIg0Oox0vXG6W2HqBI";	
 			ApiClientConfiguration oktaSettings = new ApiClientConfiguration(URL, APIKEY);
 			UserApiClient usersClient = new UserApiClient(oktaSettings);
 			User user = usersClient.getUser(username);
 			req.setAttribute("username",user.getProfile().getLogin());
 			if(user.getProfile().getUnmapped().get("idp") != null){
 
-			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-A")){
-				req.setAttribute("idp","PRS-Customer-A");
+			if(user.getProfile().getUnmapped().get("idp").equals("platformdemo-1")){
+				req.setAttribute("idp","platformdemo-1");
 				req.setAttribute("url","https://prs-poc-customer.oktapreview.com/home/bookmark/0oa6wjidi9JJlZYb20h7/1280?fromHome=true");
 }
-			if(user.getProfile().getUnmapped().get("idp").equals("PRS-Customer-B")){
-				req.setAttribute("idp","PRS-Customer-B");
+			if(user.getProfile().getUnmapped().get("idp").equals("platformdemo-2")){
+				req.setAttribute("idp","platformdemo-2");
 				req.setAttribute("url","https://prs-poc-customerb.oktapreview.com/home/bookmark/0oa6wxkuvt5jJfSMG0h7/1280");
 }
 } else {
