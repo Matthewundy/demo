@@ -17,8 +17,8 @@
 <form action="/create" method="post">            
                         <div class="loginFormItems">
                                 
-                                <p><label>Login:</label></p>
-                                <p><input id="login" name="login" type="text" value="" /></p>
+                                <p><label>Account Number</label></p>
+                                <p><input id="accountNumber" name="accountNumber" type="text" value="" /></p>
                                 <p><label>Email Address:</label></p>
                                 <p><input id="email" name="email" type="text" value="" /></p>
                                 <p><label>First Name:</label></p>

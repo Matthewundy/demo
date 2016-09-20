@@ -32,7 +32,7 @@ public class CreateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 		
-		String login = req.getParameter("login"); 
+		String login = req.getParameter("email"); 
 		String email = req.getParameter("email");
 		String firstName = req.getParameter("firstName");
 		String lastName = req.getParameter("lastName");
