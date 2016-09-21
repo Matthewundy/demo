@@ -21,7 +21,7 @@
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
-        <h3>ID Token</h3>
+        <h3>Response</h3>
     </div>
     <div class="colW">
 
