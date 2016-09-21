@@ -13,7 +13,7 @@
 </head>
 <body class="top" id="loginPage">
 
-                <img alt="Engie - Home" title="Engie - Home" src="images/engie-logo.png" />
+                <img alt="Engie - Home" title="Engie - Home" src="images/engie-logo.png" style="width:200px;height:70px" />
         <div id="main">
             
 
