@@ -18,13 +18,6 @@
             
 
 
-<!--[if IE 8]>
-        <link rel="stylesheet" type="text/css" href="~/Stylesheets/ie8-styles.css" />
-    <![endif]-->
-<!--[if IE 7]>
-    <link rel="stylesheet" type="text/css" href="~/Stylesheets/ie7-styles.css" />
-<![endif]-->
-
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
@@ -38,12 +31,6 @@
                     <div class="controlHeadline">
                     </div>
                     <div class="title">
-                    </div>
-
-                    <div class="validation-summary-errors">
-                        <ul>
-                            <li></li>
-                        </ul>
                     </div>
 
                     <section id="loginForm">
