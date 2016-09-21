@@ -50,9 +50,6 @@
 <form action="/portal/account/login" method="post">            <div class="controlWrap">
                 <div class="controlFormBlock welcomeLogin">
                     <div class="controlHeadline">
-                        <h3>
-                            <span>Welcome <%= request.getAttribute("username") %></span>
-                        </h3>
                     </div>
                     <div class="title">
                     </div>
