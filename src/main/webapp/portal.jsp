@@ -28,21 +28,7 @@
 <div class="cols1M1W">
 
     <div id="pageTitle" class="pageHeadline">
-        <h1>Welcome to Engie</h1>
-    </div>
-    <div class="colM">
-        <div class="controlWrap">
-            <div class="controlText">
-                <div class="controlHeadline">
-                    <h3>
-                    </h3>
-                </div>
-                <div class="controlElement">
-                    <div class="text">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h3>ID Token</h3>
     </div>
     <div class="colW">
 
